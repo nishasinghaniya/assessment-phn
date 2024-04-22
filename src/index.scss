@@ -1,0 +1,59 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$white: #fff;
+$primary: #5b96fb;
+$small-font-size: 0.75em;
+
+$border-radius: 0.75rem;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+  )
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  padding-top: 3.5rem;
+  background-color: #f0eff4;
+  height: 100vh;
+  color: #24383f;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+}
+
+.btn-primary {
+  color: #fff;
+}
+
+.task-list {
+  li.list-group-item {
+    border-width: $list-group-border-width;
+    border-radius: $list-group-border-radius;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  opacity: 0.8;
+}
+
+.nav-pills {
+  .nav-link.active {
+    background-color: var(--bs-primary);
+  }
+}

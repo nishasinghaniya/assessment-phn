@@ -1,0 +1,28 @@
+.card.patient-list-card {
+  height: 80vh;
+  overflow: scroll;
+  h5 {
+    color: #24383f;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--bs-gray);
+    border-right: 4px solid white;
+  }
+}
+
+.patient-details {
+  line-height: 1.25;
+  font-size: 1rem;
+  color: #24383f;
+  small {
+    font-size: 0.625rem;
+  }
+}

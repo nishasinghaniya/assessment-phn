@@ -1,0 +1,11 @@
+nav {
+  background: #fafafa;
+}
+
+.nav-link {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  &.active {
+    border-bottom: 2px solid var(--bs-primary);
+  }
+}

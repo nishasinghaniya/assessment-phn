@@ -1,0 +1,52 @@
+.rdp {
+  --rdp-cell-size: 3rem;
+}
+
+.rdp-head_cell {
+  text-transform: capitalize;
+  color: var(--bs-secondary);
+  font-weight: 400;
+  height: 18px;
+  width: 3rem;
+}
+
+.rdp-cell {
+  font-weight: 700;
+  color: #24383f;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  height: 2.5rem;
+}
+
+.rdp-day {
+  border-radius: 0.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  &[aria-selected="true"]:after {
+    content: "*";
+  }
+}
+
+.reminder-detail {
+  color: #24383f;
+  .title {
+    font-weight: 500;
+  }
+}
+
+.remindar-list {
+  height: 32vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--bs-gray);
+    border-right: 4px solid white;
+  }
+}

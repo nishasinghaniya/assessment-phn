@@ -1,0 +1,15 @@
+.demographics-label {
+  flex: 1;
+}
+
+.demographics-value {
+  flex: 3;
+}
+
+.modal,
+.modal-backdrop {
+  display: none;
+  &.show {
+    display: inline;
+  }
+}
